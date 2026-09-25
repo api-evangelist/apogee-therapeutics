@@ -1,23 +1,95 @@
 aid: apogee-therapeutics
+
 name: Apogee Therapeutics
-description: 'Apogee Therapeutics is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://cdn.prod.website-files.com/670677ce7f0a09ac37609f3e/6765719dbd03d7596291fb24_Social%20Preview.webp
+
+description: Apogee Therapeutics develops best-in-class therapies for immunological and inflammatory disorders. As part of AbbVie, the company
+  focuses on innovative science to reshape standards of care for diseases such as rheumatoid arthritis, ulcerative colitis, and other immune-mediated
+  conditions. Their pipeline includes novel biologics and small molecules targeting key pathways, aiming to improve patient outcomes and quality
+  of life. The organization emphasizes rigorous research, collaboration, and a commitment to delivering transformative treatments to patients
+  worldwide.
+
 url: https://raw.githubusercontent.com/api-evangelist/apogee-therapeutics/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-25 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-25'
+
 modified: '2026-09-25'
+
 tags:
-- Company
-apis: []
+- Biotechnology
+- Pharmaceuticals
+- Immunology
+- Inflammatory Diseases
+- AbbVie
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Conformance
+  url: conformance/apogee-therapeutics-conformance.yml
+- type: Hosts
+  url: hosts/apogee-therapeutics-hosts.yml
+- type: Vendors
+  url: vendors/apogee-therapeutics-vendors.yml
+- type: DomainSecurity
+  url: security/apogee-therapeutics-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/apogee-therapeutics_stock/
+  url: https://apogeetherapeutics.com/
+- type: Documentation
+  url: https://www.apogeetherapeutics.com/science
+- type: GettingStarted
+  url: https://www.apogeetherapeutics.com/about-us
+- type: Support
+  url: https://www.apogeetherapeutics.com/contact
+- type: Blog
+  url: https://news.abbvie.com/2026-09-03-AbbVie-Completes-Acquisition-of-Apogee-Therapeutics
+- type: Roadmap
+  url: https://www.apogeetherapeutics.com/pipeline
+- type: TermsOfService
+  url: https://www.apogeetherapeutics.com/terms
+- type: PrivacyPolicy
+  url: https://www.apogeetherapeutics.com/privacy
+
+apis:
+- name: Apogee Therapeutics API
+  description: Apogee Therapeutics does not appear to expose a public API; the website provides product information and corporate details.
+  humanURL: https://www.apogeetherapeutics.com/science
+  baseURL: null
+  x-coverage:
+    state: unreadable
+    reason: no-machine-readable-spec
+    detail: Documentation pages exist but no OpenAPI/GraphQL/AsyncAPI spec was found after exhaustive probing.
+    evidence:
+    - url: https://www.apogeetherapeutics.com/api
+      status: 404
+    checked: 2026-09-25
+  aid: apogee-therapeutics:apogee-therapeutics-api
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  method: derived
+  generated: '2026-09-25'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: the company publishes developer documentation but serves no machine-readable contract from it
+  evidence: www.apogeetherapeutics.com
+x-enrichment:
+  date: '2026-09-25'
+  status: enriched
+  artifacts_added: 6
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local

@@ -1,0 +1,12 @@
+generated: '2026-09-25'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://apogeetherapeutics.com/privacy
+sources:
+- https://apogeetherapeutics.com/privacy
+- https://www.apogeetherapeutics.com/privacy
+standards:
+- id: gdpr
+  conforms: true
+  evidence: Apogee will comply with these data protection laws when it processes personal information about you as described in this Notice.
+docs: https://apogeetherapeutics.com/privacy
