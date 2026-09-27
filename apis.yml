@@ -79,14 +79,6 @@ apis:
     checked: 2026-09-25
   aid: apogee-therapeutics:apogee-therapeutics-api
 
-x-coverage:
-  state: unreadable
-  reason: no-machine-readable-spec
-  method: derived
-  generated: '2026-09-25'
-  generator: derive-coverage.py (pre-flight evidence)
-  detail: the company publishes developer documentation but serves no machine-readable contract from it
-  evidence: www.apogeetherapeutics.com
 x-enrichment:
   date: '2026-09-25'
   status: enriched
